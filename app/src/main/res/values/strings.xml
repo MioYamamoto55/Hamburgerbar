@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">HamburgerBar</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero
+        neque, consectetur non magna eu, malesuada volutpat arcu. Fusce sit amet luctus dolor, vel
+        gravida sapien. Sed pharetra ex vel ligula condimentum, et ultricies tellus pellentesque.
+        Vestibulum eget risus cursus, accumsan felis sed, mollis magna. Proin congue in metus et
+        scelerisque. Donec nisi enim, sollicitudin sit amet molestie vel, dignissim varius est.
+        Vestibulum ac ante at ante interdum efficitur. Nulla rutrum erat eu velit ornare commodo.
+        Curabitur purus leo, vehicula et sapien at, sollicitudin volutpat ligula. Mauris at diam
+        quis sapien rutrum condimentum. Etiam hendrerit aliquet velit mattis cursus. Phasellus
+        convallis nunc eget turpis semper lobortis. Maecenas accumsan, quam nec imperdiet accumsan,
+        arcu lacus tempor nulla, a porttitor massa odio sit amet lacus. Curabitur euismod rutrum
+        interdum.</string>
+</resources>
