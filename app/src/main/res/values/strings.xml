@@ -7,9 +7,9 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="home">ホーム</string>
+    <string name="gallery">日記</string>
+    <string name="slideshow">トロフィー</string>
 
     <string name="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero
         neque, consectetur non magna eu, malesuada volutpat arcu. Fusce sit amet luctus dolor, vel
@@ -22,4 +22,8 @@
         convallis nunc eget turpis semper lobortis. Maecenas accumsan, quam nec imperdiet accumsan,
         arcu lacus tempor nulla, a porttitor massa odio sit amet lacus. Curabitur euismod rutrum
         interdum.</string>
+
+    <string name="text_from_stt_or_for_tts_goes_here">送るメッセージ</string>
+    <string name="speak">Speak</string>
+    <string name="send">送信！</string>
 </resources>

@@ -6,11 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.gallery.GalleryFragment">
 
-    <ImageView
-        android:background="@drawable/gallery_img"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
     <TextView
         android:id="@+id/text_gallery"
         android:layout_width="match_parent"

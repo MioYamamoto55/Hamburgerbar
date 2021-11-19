@@ -1,4 +1,4 @@
-package com.example.hamburgerbar.ui.slideshow
+package com.example.hamburgerbar.ui.trophy
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

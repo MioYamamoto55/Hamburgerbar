@@ -4,12 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.slideshow.SlideshowFragment">
-
-    <ImageView
-        android:background="@drawable/slideshow_img"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+    tools:context=".ui.trophy.SlideshowFragment">
 
     <TextView
         android:id="@+id/text_slideshow"
