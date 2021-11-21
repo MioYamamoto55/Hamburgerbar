@@ -9,9 +9,7 @@ import android.text.method.ScrollingMovementMethod
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -21,10 +19,12 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import java.util.*
 
 class HomeFragment : Fragment() {
-    val btn_tts = view?.findViewById<FloatingActionButton>(R.id.btn_tts)
-    val et_text_input = view?.findViewById<EditText>(R.id.et_text_input)
 
-    //SST
+    val _voice_btn = view?.findViewById<ImageButton>(R.id.et_text_input)
+    val _send_btn = view?.findViewById<FloatingActionButton>(R.id.send_btn)
+    val _et_text_input = view?.findViewById<EditText>(R.id.et_text_input)
+
+    //SST-Func
     companion object {
         private const val REQUEST_CODE_STT = 1
     }
@@ -55,7 +55,6 @@ class HomeFragment : Fragment() {
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
         val textView: TextView = binding.textHome
 
         homeViewModel.text.observe(viewLifecycleOwner, Observer {
@@ -68,10 +67,11 @@ class HomeFragment : Fragment() {
 
     //<SST func>
     /*フラグメントにsetOnClickListener→*/
+    /*
     override fun onStart() {
         super.onStart()
-        btn_tts?.setOnClickListener {
-            val text = et_text_input?.text.toString().trim()
+        _send_btn?.setOnClickListener {
+            val text = _et_text_input?.text.toString().trim()
             if (text.isNotEmpty()) {
                 textToSpeechEngine.speak(text, TextToSpeech.QUEUE_FLUSH, null, "tts1")
             } else {
@@ -79,7 +79,8 @@ class HomeFragment : Fragment() {
             }
         }
         //</SST func>
-    }
+
+    }*/
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
@@ -89,7 +90,7 @@ class HomeFragment : Fragment() {
                     val result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
                     result?.let {
                         val recognizedText = it[0]
-                        et_text_input?.setText(recognizedText)
+                        _et_text_input?.setText(recognizedText)
                     }
                 }
             }

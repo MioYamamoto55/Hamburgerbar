@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HamburgerBar</string>
+    <string name="app_name">KizunaCh</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -23,7 +23,7 @@
         arcu lacus tempor nulla, a porttitor massa odio sit amet lacus. Curabitur euismod rutrum
         interdum.</string>
 
-    <string name="text_from_stt_or_for_tts_goes_here">送るメッセージ</string>
+    <string name="text_from_stt_or_for_tts_goes_here">Text</string>
     <string name="speak">Speak</string>
     <string name="send">送信！</string>
 </resources>

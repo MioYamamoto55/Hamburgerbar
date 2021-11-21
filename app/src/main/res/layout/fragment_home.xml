@@ -7,12 +7,13 @@
     tools:context=".ui.home.HomeFragment">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/backimg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
-        android:background="@drawable/background" />
-
+        android:background="@drawable/background"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <TextView
         android:id="@+id/text_home"
@@ -21,37 +22,57 @@
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="90dp"
-        android:background="#88000000"
-        android:fontFamily="monospace"
+        android:background="@color/translucent"
+        android:fontFamily=""
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintBottom_toBottomOf="@+id/backimg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/et_text_input"
-        android:layout_width="280dp"
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="290dp"
         android:layout_height="60dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
-        android:maxLength="30"
-        android:gravity="center"
-        android:textColor="@color/white"
-        android:hint="@string/text_from_stt_or_for_tts_goes_here"
+        android:background="@color/translucent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_home"
-        android:background="#88000000"/>
+        app:layout_constraintTop_toBottomOf="@+id/text_home">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btn_tts"
-        android:src="@drawable/outline_send_black_24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        <EditText
+            android:id="@+id/et_text_input"
+            android:layout_width="230dp"
+            android:layout_height="60dp"
+            android:background="@color/translucent"
+            android:colorControlActivated="@color/white"
+            android:gravity="center"
+            android:hint="@string/text_from_stt_or_for_tts_goes_here"
+            android:maxLength="30"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_baseline_send_24"
+            android:text="@string/send" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ImageButton
+        android:id="@+id/voice_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginTop="15dp"
-        android:layout_marginEnd="20dp"
-        android:text="@string/send"
+        android:layout_marginEnd="15dp"
+        android:background="@color/translucent"
+        android:src="@drawable/mike"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_home" />
+        app:layout_constraintTop_toBottomOf="@+id/text_home"
+        android:contentDescription="TODO" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
